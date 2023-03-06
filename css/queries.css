@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Commissioner", sans-serif;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-image: url("../images/image-hero-desktop.jpg");
+  height: 40rem;
+}
+
+.main-nav-list {
+  display: flex;
+  list-style: none;
+}
+
+.logo {
+  color: #fff;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 500;
+  letter-spacing: -0.8px;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  color: #fff;
+  text-decoration: none;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+}
