@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Commissioner", sans-serif;
+  color: #000;
+}
+
+.container {
+  max-width: 144rem;
+  margin: 0 auto;
+}
+
+.header {
+  position: relative;
+}
+
+.header img {
+  width: 100%;
+}
+
+.main-menu {
+  position: absolute;
+  width: 100%;
+  content: "";
+  top: 5.5rem;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15rem;
+}
+
+.main-nav-list {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.logo {
+  color: #fff;
+  text-decoration: none;
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: -0.8px;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  color: #fff;
+  text-decoration: none;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  border-bottom: 1px solid #fff;
+}
