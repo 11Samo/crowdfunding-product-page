@@ -105,6 +105,7 @@ body {
 .btn {
   background-color: #3cb4ac;
   color: #fff;
+  transition: all 0.3s;
 }
 
 .btn:disabled {
@@ -154,7 +155,7 @@ body {
 }
 
 .heading-btn {
-  width: 22rem;
+  width: 20rem;
 }
 
 .heading-bookmark-btn {
@@ -162,10 +163,12 @@ body {
   padding-left: 8rem;
   color: #808080;
   background-color: #f9f9f9;
+  width: 20rem;
 }
 
 .heading-bookmark-btn:active {
   color: #147b74;
+  background-color: #f9f9f9;
 }
 
 .heading-bookmark-btn:active .bookmark-icon circle {
@@ -174,6 +177,11 @@ body {
 
 .heading-bookmark-btn:active .bookmark-icon path {
   fill: #fff;
+}
+
+.heading-bookmark-btn .bookmark-icon circle,
+.heading-bookmark-btn .bookmark-icon path {
+  transition: all 0.3s;
 }
 
 .bookmark-icon {
