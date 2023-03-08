@@ -92,9 +92,9 @@ body {
   padding: 2rem 3rem;
   border-radius: 100px;
   font-weight: 700;
+  font-size: 1.5rem;
   border: none;
   cursor: pointer;
-  font-size: 1.5rem;
   width: 16.3rem;
 }
 
@@ -158,30 +158,47 @@ body {
   width: 20rem;
 }
 
-.heading-bookmark-btn {
+/* SWITCH */
+.switch {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: 700;
   position: relative;
-  padding-left: 8rem;
-  color: #808080;
-  background-color: #f9f9f9;
   width: 20rem;
-}
-
-.heading-bookmark-btn:active {
-  color: #147b74;
+  height: 5.76rem;
   background-color: #f9f9f9;
+  border-radius: 100px;
+  cursor: pointer;
 }
 
-.heading-bookmark-btn:active .bookmark-icon circle {
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.bookmark {
+  padding-left: 4rem;
+  color: #808080;
+}
+
+input:checked + .bookmark {
+  color: #147b74;
+}
+
+input + .bookmark + .bookmark-icon circle,
+input + .bookmark + .bookmark-icon path {
+  transition: all 0.3s;
+}
+
+input:checked + .bookmark + .bookmark-icon circle {
   fill: #147b74;
 }
 
-.heading-bookmark-btn:active .bookmark-icon path {
+input:checked + .bookmark + .bookmark-icon path {
   fill: #fff;
-}
-
-.heading-bookmark-btn .bookmark-icon circle,
-.heading-bookmark-btn .bookmark-icon path {
-  transition: all 0.3s;
 }
 
 .bookmark-icon {
@@ -190,6 +207,7 @@ body {
   top: 0;
   left: 0;
 }
+/* END SWITCH */
 
 /************************/
 /* NUMBERS SECTION */
