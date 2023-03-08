@@ -176,7 +176,8 @@
         </div>
       </main>
     </div>
-    <div class="modal-frame show">
+    <!-- MODAL COMPLETE -->
+    <div class="modal-frame" id="modal-complete-id">
       <div class="modal-complete">
         <svg
           class="checked-icon"
@@ -200,6 +201,57 @@
           completed.
         </p>
         <button class="btn">Got it</button>
+      </div>
+    </div>
+
+    <!-- MODAL SUPPORT -->
+    <div class="modal-frame show" id="modal-support-id">
+      <div class="modal-support">
+        <svg
+          class="close-modal-icon"
+          width="15"
+          height="15"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M11.314 0l2.828 2.828L9.9 7.071l4.243 4.243-2.828 2.828L7.07 9.9l-4.243 4.243L0 11.314 4.242 7.07 0 2.828 2.828 0l4.243 4.242L11.314 0z"
+            fill="#000"
+            fill-rule="evenodd"
+            opacity=".4"
+          />
+        </svg>
+        <h3>Back this project</h3>
+        <p>
+          Want to support us in bringing Mastercraft Bamboo Monitor Riser out in
+          the world?
+        </p>
+        <!-- <div class="modal-card">
+          <div class="modal-card-row">
+            <input type="radio" name="" id="" />
+            <h4>Pledge with no reward</h4>
+          </div>
+          <p>
+            Choose to support us without a reward if you simply believe in our
+            project. As a backer, you will be signed up to receive product
+            updates via email.
+          </p>
+        </div> -->
+        <div class="modal-card">
+          <div class="modal-card-row">
+            <label class="radio-btn" for="radio-btn-id">
+              <input type="radio" id="radio-btn-id" name="stand-type" />
+              <span class="radio-btn-style"></span>
+            </label>
+            <h4>Bamboo Stand</h4>
+            <p class="pledge">Pledge $25 or more</p>
+            <p class="left-number">101 <span>left</span></p>
+          </div>
+          <p>
+            Choose to support us without a reward if you simply believe in our
+            project. As a backer, you will be signed up to receive product
+            updates via email.
+          </p>
+        </div>
       </div>
     </div>
   </body>
