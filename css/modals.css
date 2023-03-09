@@ -67,6 +67,12 @@
 /************************/
 /* SUPPORT MODAL */
 /************************/
+.modal-support {
+  overflow: auto;
+  /* It needs to show scrollbar */
+  height: 80vh;
+}
+
 .modal-frame .modal-support {
   left: 50%;
   top: -500px;
@@ -98,6 +104,11 @@
 
 .close-modal-icon {
   grid-column: 2/-1;
+  cursor: pointer;
+}
+
+.close-modal-icon:hover path {
+  fill: #000;
 }
 
 .modal-support h3 {
@@ -127,6 +138,12 @@
   height: 0;
 }
 
+.radio-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .radio-btn-style {
   position: relative;
   display: inline-block;
@@ -135,6 +152,10 @@
   background-color: #fff;
   border-radius: 50%;
   border: 1px solid #dbdbdb;
+}
+
+.radio-btn-style:hover {
+  cursor: pointer;
 }
 
 .radio-btn input:checked + .radio-btn-style::after {
@@ -148,19 +169,22 @@
   border-radius: 50%;
   transform: translate(-50%, -50%);
 }
-/* RADIO BUTTON */
+
+.modal-card-row .radio-btn {
+  margin-right: 2rem;
+}
+
+/*END RADIO BUTTON */
 
 .modal-card-row {
   display: flex;
   align-items: center;
-}
-
-.modal-card-row {
   font-size: 1.5rem;
 }
 
-.modal-card-row .radio-btn {
-  margin-right: 2rem;
+.modal-card:not(.disabled) .modal-card-row h4:hover {
+  color: #3cb4ac;
+  cursor: pointer;
 }
 
 .modal-card-row .pledge {
@@ -170,4 +194,44 @@
 
 .modal-card-row .left-number {
   margin-left: auto;
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: #000;
+}
+
+.modal-card-row .left-number span {
+  color: #808080;
+  font-weight: 500;
+  margin-left: 1rem;
+}
+
+.modal-card p {
+  line-height: 1.6;
+  margin-left: 5rem;
+}
+
+/************************/
+/* SCROLLBAR */
+/************************/
+/* width */
+::-webkit-scrollbar {
+  width: 1rem;
+  right: 100px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #3cb4ac;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #147b74;
 }
