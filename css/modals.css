@@ -2,6 +2,11 @@
 /* DEFAULT MODAL */
 /************************/
 
+.modal-frame {
+  opacity: 0;
+  transition: all 0.3s;
+}
+
 .modal-frame.show {
   opacity: 1;
   position: fixed;
@@ -11,11 +16,6 @@
   width: 100%;
   height: 100%;
   background-color: hsla(0, 0%, 0%, 0.5);
-}
-
-.modal-frame {
-  opacity: 0;
-  transition: all 0.3s;
 }
 
 /************************/
@@ -29,17 +29,22 @@
 
   position: absolute;
   content: "";
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   background-color: #fff;
-  max-width: 50rem;
+  /* max-width: 50rem; */
   padding: 4rem;
   border-radius: 12px;
 }
 
 .modal-frame.show .modal-complete {
+  width: 100%;
+  max-width: 50rem;
   top: 50%;
+}
+
+.modal-complete {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .checked-icon {
@@ -67,6 +72,8 @@
 /************************/
 /* SUPPORT MODAL */
 /************************/
+
+/* for scrollbar */
 .modal-support {
   overflow: auto;
   /* It needs to show scrollbar */
@@ -81,9 +88,6 @@
 
   position: absolute;
   content: "";
-  /* display: flex;
-  flex-direction: column;
-  align-items: center; */
   background-color: #fff;
   max-width: 50rem;
   padding: 4rem;
@@ -131,6 +135,10 @@
   border: 1px solid #dbdbdb;
 }
 
+.modal-card.highlight-borders {
+  border: 1px solid #3cb4ac;
+}
+
 /* RADIO BUTTON */
 .radio-btn input {
   opacity: 0;
@@ -158,6 +166,10 @@
   cursor: pointer;
 }
 
+.radio-btn input:disabled + .radio-btn-style:hover {
+  cursor: auto;
+}
+
 .radio-btn input:checked + .radio-btn-style::after {
   position: absolute;
   content: "";
@@ -182,7 +194,7 @@
   font-size: 1.5rem;
 }
 
-.modal-card:not(.disabled) .modal-card-row h4:hover {
+.modal-card:not(.disabled) .pledge-heading:hover {
   color: #3cb4ac;
   cursor: pointer;
 }
