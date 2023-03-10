@@ -247,3 +247,70 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #147b74;
 }
+
+/************************/
+/* PLEDGE PART */
+/************************/
+
+/* INPUT */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.input {
+  position: relative;
+}
+
+.input-pledge {
+  padding: 2rem 3rem;
+  font-weight: 700;
+  font-size: 1.5rem;
+  border-radius: 100px;
+  border: 1px solid #dbdbdb;
+  width: 15rem;
+  position: relative;
+  display: block;
+}
+
+.input-pledge:focus,
+.input-pledge:active,
+.input-pledge:focus-visible {
+  border: 1px solid #3cb4ac;
+  outline: none;
+  position: relative;
+  display: block;
+}
+
+.dollar-sign {
+  position: absolute;
+  content: "";
+  top: 41%;
+  left: 2rem;
+  font-weight: 700;
+  font-size: 1.5rem;
+  transform: translate(0, -25%);
+  color: #808080;
+}
+
+/* END INPUT */
+
+.enter-pledge {
+  margin-top: 3rem;
+  border-top: 1px solid #dbdbdb;
+  padding-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.enter-pledge p {
+  margin: 0;
+}
