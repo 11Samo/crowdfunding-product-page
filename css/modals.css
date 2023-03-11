@@ -204,23 +204,32 @@
   color: #3cb4ac;
 }
 
-.modal-card-row .left-number {
-  margin-left: auto;
-  font-weight: 700;
-  font-size: 1.8rem;
-  color: #000;
-}
-
-.modal-card-row .left-number span {
-  color: #808080;
-  font-weight: 500;
-  margin-left: 1rem;
-}
-
 .modal-card p {
   line-height: 1.6;
   margin-left: 5rem;
 }
+
+.modal-card-row .right-side {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.right-side .left-number {
+  font-weight: 700;
+  font-size: 2rem;
+  color: #000;
+}
+
+.left-number + p {
+  margin-left: 1rem;
+}
+
+/* .left-number span {
+  color: #808080;
+  font-weight: 500;
+  margin-left: 1rem;
+} */
 
 /************************/
 /* SCROLLBAR */
@@ -293,7 +302,7 @@ input[type="number"] {
   position: absolute;
   content: "";
   top: 41%;
-  left: 2rem;
+  left: 1.5rem;
   font-weight: 700;
   font-size: 1.5rem;
   transform: translate(0, -25%);
