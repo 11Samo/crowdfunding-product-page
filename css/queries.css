@@ -1,0 +1,11 @@
+@media (max-width: 500px) {
+  .main-section {
+    margin: 0 2rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .switch {
+    width: 2rem;
+  }
+}
