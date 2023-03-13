@@ -12,6 +12,7 @@
     />
     <link rel="stylesheet" href="css/style2.css" />
     <link rel="stylesheet" href="css/queries.css" />
+    <link rel="stylesheet" href="css/modals.css" />
 
     <title>Crowdfund product page</title>
   </head>
@@ -192,6 +193,146 @@
           </div>
         </div>
       </main>
+    </div>
+    <!-- MODAL COMPLETE -->
+    <div class="modal-frame" id="modal-complete-id">
+      <div class="modal-complete">
+        <svg
+          class="checked-icon"
+          width="64"
+          height="64"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g fill="none" fill-rule="evenodd">
+            <circle fill="#3CB3AB" cx="32" cy="32" r="32" />
+            <path
+              stroke="#FFF"
+              stroke-width="5"
+              d="M20 31.86L28.093 40 44 24"
+            />
+          </g>
+        </svg>
+        <h3>Thanks for yours support!</h3>
+        <p>
+          Your pledge brings us one step closer to sharing Mastercraft Bamboo
+          Monitor Riser worldwide. You will get an email once our campaign is
+          completed.
+        </p>
+        <button class="btn" id="got-it-btn-id">Got it</button>
+      </div>
+    </div>
+
+    <!-- MODAL SUPPORT -->
+    <div class="modal-frame show" id="modal-support-id">
+      <div class="modal-support">
+        <svg
+          class="close-modal-icon"
+          width="15"
+          height="15"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M11.314 0l2.828 2.828L9.9 7.071l4.243 4.243-2.828 2.828L7.07 9.9l-4.243 4.243L0 11.314 4.242 7.07 0 2.828 2.828 0l4.243 4.242L11.314 0z"
+            fill="#808080"
+            fill-rule="evenodd"
+          />
+        </svg>
+        <h3>Back this project</h3>
+        <p>
+          Want to support us in bringing Mastercraft Bamboo Monitor Riser out in
+          the world?
+        </p>
+        <div class="modal-card no-reward">
+          <label class="radio-btn" for="radio-btn-1-id">
+            <input
+              class="radio-btn-input"
+              type="radio"
+              id="radio-btn-1-id"
+              name="stand-type"
+            />
+            <span class="radio-btn-style"></span>
+          </label>
+          <h4 class="pledge-heading">Pledge with no reward</h4>
+          <p class="description">
+            Choose to support us without a reward if you simply believe in our
+            project. As a backer, you will be signed up to receive product
+            updates via email.
+          </p>
+        </div>
+        <div class="modal-card">
+          <label class="radio-btn" for="radio-btn-2-id">
+            <input
+              class="radio-btn-input"
+              type="radio"
+              id="radio-btn-2-id"
+              name="stand-type"
+            />
+            <span class="radio-btn-style"></span>
+          </label>
+          <div class="pledge-group">
+            <h4 class="pledge-heading">Bamboo Stand</h4>
+            <p class="pledge">Pledge $25 or more</p>
+          </div>
+          <div class="right-side">
+            <p class="left-number">101</p>
+            <p>left</p>
+          </div>
+          <p class="description">
+            You get an ergonomic stand made of natural bamboo. You've helped us
+            launch our promotional campaign, and you’ll be added to a special
+            Backer member list.
+          </p>
+        </div>
+        <div class="modal-card">
+          <label class="radio-btn" for="radio-btn-3-id">
+            <input
+              class="radio-btn-input"
+              type="radio"
+              id="radio-btn-3-id"
+              name="stand-type"
+            />
+            <span class="radio-btn-style"></span>
+          </label>
+          <div class="pledge-group">
+            <h4 class="pledge-heading">Black Edition Stand</h4>
+            <p class="pledge">Pledge $75 or more</p>
+          </div>
+          <div class="right-side">
+            <p class="left-number">64</p>
+            <p>left</p>
+          </div>
+          <p class="description">
+            You get a Black Special Edition computer stand and a personal thank
+            you. You’ll be added to our Backer member list. Shipping is
+            included.
+          </p>
+        </div>
+        <div class="modal-card disabled">
+          <label class="radio-btn" for="radio-btn-4-id">
+            <input
+              class="radio-btn-input"
+              type="radio"
+              id="radio-btn-4-id"
+              name="stand-type"
+              disabled
+            />
+            <span class="radio-btn-style"></span>
+          </label>
+          <div class="pledge-group">
+            <h4 class="pledge-heading">Mahogany Special Edition</h4>
+            <p class="pledge">Pledge $200 or more</p>
+          </div>
+          <div class="right-side">
+            <p class="left-number">0</p>
+            <p>left</p>
+          </div>
+          <p class="description">
+            You get two Special Edition Mahogany stands, a Backer T-Shirt, and a
+            personal thank you. You’ll be added to our Backer member list.
+            Shipping is included.
+          </p>
+        </div>
+      </div>
     </div>
     <script src="script.js"></script>
   </body>
