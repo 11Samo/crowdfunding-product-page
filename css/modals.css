@@ -397,5 +397,20 @@ input[type="number"] {
   .enter-pledge {
     flex-direction: column;
     gap: 2rem;
+    align-items: center;
+  }
+  /* 
+  .enter-group {
+    max-width: 20rem;
+  } */
+
+  .enter-pledge .input-pledge {
+    width: 10rem;
+  }
+
+  .enter-group .btn {
+    width: 12rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
