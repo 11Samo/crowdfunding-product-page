@@ -62,7 +62,7 @@ pledgeHeadings.forEach((heading) => {
   heading.addEventListener("click", () => {
     if (!heading.closest(".modal-card").classList.contains("disabled")) {
       let radioBtn = heading
-        .closest(".modal-card-row")
+        .closest(".modal-card")
         .querySelector(".radio-btn-input");
       radioBtn.checked = true;
       removeAllColorBorders(heading);
@@ -100,16 +100,18 @@ const addPledgeForm = (rootElement) => {
   div.classList.add("enter-pledge");
   div.innerHTML = `
     <p>Enter your pledge</p>
-    <label class="input" for="radio-btn-2-id">
-      <input
-        class="input-pledge"
-        type="number"
-        id="radio-btn-2-id"
-        name="stand-type"
-      />
-      <span class="dollar-sign">$</span>
-    </label>
-    <button class="btn">Continue</button>
+    <div class="enter-group">
+      <label class="input" for="radio-btn-2-id">
+        <input
+          class="input-pledge"
+          type="number"
+          id="radio-btn-2-id"
+          name="stand-type"
+        />
+        <span class="dollar-sign">$</span>
+      </label>
+      <button class="btn">Continue</button>
+    </div>
   `;
   rootElement.appendChild(div);
 

@@ -5,6 +5,7 @@
 .modal-frame {
   opacity: 0;
   transition: all 0.3s;
+  z-index: 1000;
 }
 
 .modal-frame.show {
@@ -323,12 +324,26 @@ input[type="number"] {
 /* END INPUT */
 
 .enter-pledge {
+  grid-column: 1 /-1;
   margin-top: 3rem;
   border-top: 1px solid #dbdbdb;
   padding-top: 2rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.enter-pledge .enter-group {
+  display: flex;
+}
+
+.enter-pledge .input-pledge {
+  width: 10rem;
+  margin-right: 2rem;
+}
+
+.enter-pledge .input {
+  margin-left: auto;
 }
 
 .enter-pledge p {
@@ -377,5 +392,10 @@ input[type="number"] {
   }
   .modal-card .right-side .left-number {
     margin-right: 1rem;
+  }
+
+  .enter-pledge {
+    flex-direction: column;
+    gap: 2rem;
   }
 }
