@@ -1,5 +1,17 @@
 @media (max-width: 510px) {
   /************************/
+  /* HEADING SECTION */
+  /************************/
+
+  .bookmark {
+    display: none;
+  }
+
+  .switch {
+    width: 5rem;
+  }
+
+  /************************/
   /* NUMBERS SECTION */
   /************************/
   .numbers-section {
