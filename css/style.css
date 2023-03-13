@@ -43,43 +43,112 @@ body {
   width: 100%;
 }
 
-.main-menu {
+/************************/
+/* HEADER MENU */
+/************************/
+.navbar {
   position: absolute;
-  width: 100%;
   content: "";
-  top: 5.5rem;
+  top: 4rem;
   left: 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   padding: 0 15rem;
+  width: 100%;
 }
 
-.main-nav-list {
-  display: flex;
-  list-style: none;
-  gap: 2rem;
-  font-size: 1.5rem;
-  font-weight: 500;
-}
-
-.logo {
+.navbar-logo {
   color: #fff;
-  text-decoration: none;
   font-size: 2.5rem;
+  user-select: none;
   font-weight: 700;
-  letter-spacing: -0.8px;
 }
 
-.main-nav-link:link,
-.main-nav-link:visited {
-  color: #fff;
-  text-decoration: none;
+.navbar ul {
+  display: flex;
+  width: 100%;
+  align-items: center;
 }
 
-.main-nav-link:hover,
-.main-nav-link:active {
+.menu-part {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  z-index: 100;
+  transition: all 0.3s;
+}
+
+.navbar li {
+  list-style-type: none;
+  margin: 1rem;
+}
+
+.navbar-links {
+  font-size: 1.5rem;
+  font-weight: 700;
+  border-bottom: 1px solid transparent;
+}
+
+.navbar-links:hover {
   border-bottom: 1px solid #fff;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.navbar-toggle {
+  display: none;
+}
+
+.hamburger-icon {
+  width: 5rem;
+  stroke: #fff;
+}
+
+@media (max-width: 1000px) {
+  .menu-part {
+    flex-direction: column;
+  }
+  .navbar {
+    padding: 0 3rem;
+  }
+
+  .navbar ul {
+    align-items: start;
+  }
+
+  .navbar-toggle {
+    display: block;
+    text-align: right;
+  }
+
+  .navbar-toggle svg {
+    cursor: pointer;
+  }
+
+  .navbar-links {
+    display: none;
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar-links:hover {
+    border-bottom: 1px solid transparent;
+  }
+
+  .navbar a:hover {
+    color: #e4e4e4;
+  }
+
+  .menu-part.active {
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 12px;
+  }
+
+  .active {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 /************************/
@@ -95,10 +164,11 @@ body {
 }
 
 .main-section {
-  display: grid;
-  grid-template-columns: 1fr;
-  justify-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   row-gap: 2rem;
+  margin: 0 2rem;
 }
 
 .btn {
@@ -227,7 +297,7 @@ input:checked + .bookmark + .bookmark-icon path {
 /************************/
 .numbers-section {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 5px 1fr 5px 1fr;
 }
 
 .numbers-part {
@@ -262,7 +332,7 @@ input:checked + .bookmark + .bookmark-icon path {
   height: 1.5rem;
   background-color: #f9f9f9;
   width: 100%;
-  grid-column: 1 / span 3;
+  grid-column: 1 / -1;
 }
 
 .progress-bar span {

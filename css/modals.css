@@ -189,11 +189,6 @@
 
 /*END RADIO BUTTON */
 
-/* .modal-card-row {
-  display: flex;
-  align-items: center;
-} */
-
 .modal-card {
   display: grid;
   grid-template-columns: 5rem 2fr 1fr;
@@ -217,7 +212,6 @@
 
 .modal-card .description {
   line-height: 1.6;
-  /* margin-left: 5rem; */
   grid-column: 2/-1;
 }
 
@@ -236,12 +230,6 @@
 .left-number + p {
   margin-left: 1rem;
 }
-
-/* .left-number span {
-  color: #808080;
-  font-weight: 500;
-  margin-left: 1rem;
-} */
 
 /************************/
 /* SCROLLBAR */
@@ -399,10 +387,6 @@ input[type="number"] {
     gap: 2rem;
     align-items: center;
   }
-  /* 
-  .enter-group {
-    max-width: 20rem;
-  } */
 
   .enter-pledge .input-pledge {
     width: 10rem;
