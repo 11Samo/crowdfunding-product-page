@@ -1,3 +1,16 @@
+/************************/
+/* GUIDE */
+/************************/
+/*
+Border color: #dbdbdb;
+Primary color: 
+- default: #3cb4ac
+- active: #147b74
+
+
+*/
+/************************/
+
 * {
   margin: 0;
   padding: 0;
@@ -60,6 +73,7 @@ body {
   display: flex;
   justify-content: flex-end;
   z-index: 100;
+  transition: all 0.3s;
 }
 
 .navbar li {
@@ -70,6 +84,7 @@ body {
 .navbar-links {
   font-size: 1.5rem;
   font-weight: 700;
+  border-bottom: 1px solid transparent;
 }
 
 .navbar-links:hover {
@@ -115,6 +130,14 @@ body {
     display: none;
     width: 100%;
     text-align: center;
+  }
+
+  .navbar-links:hover {
+    border-bottom: 1px solid transparent;
+  }
+
+  .navbar a:hover {
+    color: #e4e4e4;
   }
 
   .menu-part.active {
